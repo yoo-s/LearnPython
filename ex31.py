@@ -1,4 +1,4 @@
-print "You enter a dark room with two doors. Do you go through door #1 or door #2?"
+print "You enter a dark room with three doors. Do you go through door #1, door #2, or door #3?"
 
 door = raw_input("> ")
 
@@ -28,6 +28,22 @@ elif door == "2":
         print "Your body survives powered by a mind of jello. Good job!"
     else:
         print "The insanity rots your eyes into a pool of muck. Good job!"
+
+elif door == "3":
+    print "You stand inside a cozy room full of mewing, fluffy kittens."
+    print "1. Pick up a kitten and hug it."
+    print "2. Feed a kitten with a fishie treat."
+    print "3. Squeeze a kitten to death from too much cuteness."
+
+    kitten = raw_input("> ")
+
+    if kitten == "1" or kitten == "2":
+        print "The kitten purrs delightfully and snuggles you. Good job!"
+    elif kitten == "3":
+        print "The kitten goddess comes up and gives you a bitch-slap. Smooth."
+    else:
+        print "The kitten stares at you with wide, puzzled eyes."
+
 
 else:
     print "You stumble around and fall on a knife and die. Good job!"
