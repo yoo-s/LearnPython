@@ -53,6 +53,20 @@ def cthulhu_room():
     else:
         cthulhu_room()
 
+def underwater_castle():
+    print "You open the door, and immediately you're engulfed in deep blue water that gushes out."
+    print "You're floating in the dark water, and you open your eyes against the freezing cold."
+    print "You see lights in the distance, and you start swimming towards it."
+    print "As you get closer you feel warmth coming from the light source."
+    print "Soon you're staring astonishedly at an enormous underwater castle towering over you."
+    print "There is a door in front of you, adorned with a small window with light glowing through."
+    print "Do you dare go in?"
+
+    choice == raw_input("> ")
+
+    if choice == "yes" or choice == "go in":
+        print ""
+
 
 def dead(why):
     print why, "Good job!"
@@ -60,7 +74,7 @@ def dead(why):
 
 def start():
     print "You are in a dark room."
-    print "There is a door to your right and left."
+    print "There is a door to your front, right and left."
     print "Which one do you take?"
 
     choice = raw_input("> ")
@@ -69,6 +83,8 @@ def start():
         bear_room()
     elif choice == "right":
         cthulhu_room()
+    elif choice == "front":
+        underwater_castle()
     else:
         dead("You stumble around the room until you starve.")
 
