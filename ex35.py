@@ -65,7 +65,9 @@ def underwater_castle():
     choice == raw_input("> ")
 
     if choice == "yes" or choice == "go in":
-        print ""
+        print "As you reach for the gracefully curved, stone handle, someone opens it from the inside -- a mermaid."
+        print '"Visitor?" the mermaid asks in a soft, echoey voice. "Please come in." She gives you a warm smile.'
+        
 
 
 def dead(why):
