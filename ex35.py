@@ -66,8 +66,48 @@ def underwater_castle():
 
     if choice == "yes" or choice == "go in":
         print "As you reach for the gracefully curved, stone handle, someone opens it from the inside -- a mermaid."
-        print '"Visitor?" the mermaid asks in a soft, echoey voice. "Please come in." She gives you a warm smile.'
-        
+        print '"Visitor?" the mermaid asks in a soft, echoey voice. "Please do come in." She gives you a warm smile.'
+        print "Do you trust her?"
+
+        trust == raw_input("> ")
+
+        if trust == "yes":
+            print "You hesitantly take the mermaid's outstretched hand, and let her lead you inside."
+            print '''It's very warm and cozy here, unlike the merciless cold outside this strange castle.
+            You glance uncertainly at the mermaid, who sits you down at a wooden table engraved with fancy patterns.
+            She offers you the milk and cookies (wait, wut?) on the table.'''
+            print " "
+            print "1. Who are you?"
+            print "2. What is this place?"
+            print "3. How do I get out of here?"
+
+            ask == raw_input("> ")
+
+            if ask == "1":
+                print 'The mermaid smiles slyly. "The keeper of this underwater castle."'
+            elif ask == "2":
+                print 'The mermaid smiles slyly. "The underwater castle in the middle of this dark underwater realm.'
+            elif ask == "3":
+                print 'The mermaid gazes at you intently with her aquamarine eyes. "The answer you seek, you will find within."'
+                print "Was there a hint of sadness in her voice just now?"
+            else:
+                print "The mermaid blinks at you, confused."
+                print '"Let me try again," you stammer.'
+
+        elif trust == "no":
+            print "You stare at the mermaid's outstretched hand, and the mermaid averts her eyes and withdraws her hand."
+            print '"If you do not wish to accept my welcome, you will have to survive out there in the dark and face the Risk," she says. "I will leave you to your game then."'
+            print "She falls silent, glances at you somewhat worriedly, then slowly closes the door shut. You're on your own now. You feel the pressure of the darkness behind you."
+            print "You begin to think that wasn't exactly the best choice you've made so far."
+        else:
+            print 'The mermaid looks at you with curious eyes. I don\'t think she understands that," you think to yourself.'
+
+    elif choice == "no" or choice == "don't go in":
+        print '''You feel somewhat scared as you look behind you and see only cold darkness, but you decide to leave the door untouched. 
+        You force yourself to turn from the tempting warmth and swim out into the unknown, ready to face any dangers to come.'''
+    else:
+        print "You can make a better choice than that, come on."
+
 
 
 def dead(why):
