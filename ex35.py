@@ -78,18 +78,20 @@ def underwater_castle():
             print "2. What is this place?"
             print "3. How do I get out of here?"
 
-            ask = raw_input("> ")
+            while True:
 
-            if ask == "1":
-                print 'The mermaid smiles slyly. "The keeper of this underwater castle."'
-            elif ask == "2":
-                print 'The mermaid smiles slyly. "The underwater castle in the middle of this dark underwater realm.'
-            elif ask == "3":
-                print 'The mermaid gazes at you intently with her aquamarine eyes. "The answer you seek, you will find within."'
-                print "Was there a hint of sadness in her voice just now?"
-            else:
-                print "The mermaid blinks at you, confused."
-                print '"Let me try again," you stammer.'
+                ask = raw_input("> ")
+
+                if ask == "1":
+                    print 'The mermaid smiles slyly. "The keeper of this underwater castle."'
+                elif ask == "2":
+                    print 'The mermaid smiles slyly. "The underwater castle in the middle of this dark underwater realm.'
+                elif ask == "3":
+                    print 'The mermaid gazes at you intently with her aquamarine eyes. "The answer you seek, you will find within."'
+                    print "Was there a hint of sadness in her voice just now?"
+                else:
+                    print "The mermaid blinks at you, confused."
+                    print '"Let me try again," you stammer.'
 
         elif trust == "no":
             print "You stare at the mermaid's outstretched hand, and the mermaid averts her eyes and withdraws her hand."
