@@ -4,10 +4,7 @@ def gold_room():
     print "This room is full of gold. How much do you take?"
 
     choice = raw_input("> ")
-    if "0" in choice or "1" in choice:
-        how_much = int(choice)
-    else:
-        dead("Man, learn to type a number.")
+    how_much = int(choice)
 
     if how_much < 50:
         print "Nice, you're not greedy, you win!"
@@ -62,14 +59,14 @@ def underwater_castle():
     print "There is a door in front of you, adorned with a small window with light glowing through."
     print "Do you dare go in?"
 
-    choice == raw_input("> ")
+    choice = raw_input("> ")
 
     if choice == "yes" or choice == "go in":
         print "As you reach for the gracefully curved, stone handle, someone opens it from the inside -- a mermaid."
         print '"Visitor?" the mermaid asks in a soft, echoey voice. "Please do come in." She gives you a warm smile.'
         print "Do you trust her?"
 
-        trust == raw_input("> ")
+        trust = raw_input("> ")
 
         if trust == "yes":
             print "You hesitantly take the mermaid's outstretched hand, and let her lead you inside."
@@ -81,7 +78,7 @@ def underwater_castle():
             print "2. What is this place?"
             print "3. How do I get out of here?"
 
-            ask == raw_input("> ")
+            ask = raw_input("> ")
 
             if ask == "1":
                 print 'The mermaid smiles slyly. "The keeper of this underwater castle."'
@@ -107,6 +104,7 @@ def underwater_castle():
         You force yourself to turn from the tempting warmth and swim out into the unknown, ready to face any dangers to come.'''
     else:
         print "You can make a better choice than that, come on."
+        print '"Let me try that again," you say."'
 
 
 
