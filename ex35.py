@@ -102,8 +102,8 @@ def underwater_castle():
             print 'The mermaid looks at you with curious eyes. I don\'t think she understands that," you think to yourself.'
 
     elif choice == "no" or choice == "don't go in":
-        print '''You feel somewhat scared as you look behind you and see only cold darkness, but you decide to leave the door untouched. 
-        You force yourself to turn from the tempting warmth and swim out into the unknown, ready to face any dangers to come.'''
+        dead('''You feel somewhat scared as you look behind you and see only cold darkness, but you decide to leave the door untouched. 
+        You force yourself to turn from the tempting warmth and swim out into the unknown, ready to face any dangers to come.''')
     else:
         print "You can make a better choice than that, come on."
         print '"Let me try that again," you say."'
