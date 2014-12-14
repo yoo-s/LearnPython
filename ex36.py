@@ -1,4 +1,4 @@
-# Where's My Kitten?
+# Where are you, my ______?
 # A text adventure game
 
 def start():
@@ -13,9 +13,11 @@ bridge across it, and across the stream in the distance is a white windmill."
 	print "Type 'help' for list of possible actions."
 	print " "
 	
+	# THIS IS WHERE I NEEDED HELP ----------------------------------------------------
+
 	action = raw_input("> ")
 
-	if "farmhouse" in action or "north" in action:
+	if "farmhouse" in action or "north" in action: # <------ (HOW DO I MAKE THIS CONCISE?)
 		farmhouse()
 	elif "fields" in action or "left" in action or "west" in action:
 		cornfield()
@@ -27,6 +29,8 @@ bridge across it, and across the stream in the distance is a white windmill."
 		help()
 	else:
 		print "Unfortunately, you don't know how to do said action."
+
+	# END SECTION WHERE I NEED HELP ---------------------------------------------------
 
 def help():
 	print "You can go in directions north, south, east, and west. You can look \
