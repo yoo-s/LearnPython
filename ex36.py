@@ -7,8 +7,9 @@ def start():
 	print "You need to find your kitten."
 	print "Go~~~!"
 	print " "
-	print '''You stand facing the farmhouse. There's grassy fields to your left and a barnhouse to your right. Behind you is a stream with a
-	small wooden bridge across it, and across the stream in the distance is a white windmill.'''
+	print "You stand facing the farmhouse. There's grassy fields to your left \
+and a barnhouse to your right. Behind you is a stream with a small wooden \
+bridge across it, and across the stream in the distance is a white windmill."
 	print "Type 'help' for list of possible actions."
 	print " "
 	
@@ -28,4 +29,15 @@ def start():
 		print "Unfortunately, you don't know how to do said action."
 
 def help():
-	print "You can go in directions north, south, east, and west. You can look at your surroundings, "
+	print "You can go in directions north, south, east, and west. You can look \
+at your surroundings, read anything readable, open things, etc. for starters."
+
+def cross_stream():
+	print "You cross the little wooden bridge curving over the gently trickling \
+stream. You're now standing in a vast grassy plain, and far in the middle of \
+the plain stands a white windmill slowly turning in the breeze."
+
+	action = raw_input("> ")
+
+
+start()
