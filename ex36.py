@@ -61,4 +61,3 @@ the plain stands a white windmill slowly turning in the breeze."
 
 
 intro()
-start()
