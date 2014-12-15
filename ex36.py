@@ -7,15 +7,16 @@ def start():
 	print "You need to find your kitten."
 	print "Go~~~!"
 	print " "
-	print "You stand facing north towards the farmhouse. There's grassy fields to your left \
-and a barnhouse to your right. Behind you is a stream with a small wooden \
-bridge across it, and across the stream in the distance is a white windmill."
+	time.sleep(2)
+	print "You stand facing north towards the farmhouse. There's grassy fields \
+to your left and a barnhouse to your right. Behind you is a stream with a small \
+wooden bridge across it, and across the stream in the distance is a white windmill."
 	print "Type 'help' for list of possible actions."
 	print " "
 	
 	# THIS IS WHERE I NEEDED HELP ----------------------------------------------------
 
-	action = raw_input("> ")
+	action = ['N', 'S', 'E', 'W', 'farmhouse', 'fields', 'left', 'barnhouse', 'right', 'cross', 'stream', 'help']
 
 	if "farmhouse" in action or "north" in action: # <------ (HOW DO I MAKE THIS CONCISE?)
 		farmhouse()
@@ -33,8 +34,8 @@ bridge across it, and across the stream in the distance is a white windmill."
 	# END SECTION WHERE I NEED HELP ---------------------------------------------------
 
 def help():
-	print "You can go in directions north, south, east, and west. You can look \
-at your surroundings, read anything readable, open things, etc. for starters."
+	print "Type 'N', 'S', 'E', or 'W' to go in said direction. You can look at \
+(object), read (object), open (object), etc. for starters."
 
 def farmhouse():
 	print "You open the door and step inside the house."
