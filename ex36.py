@@ -50,7 +50,9 @@ def cornfield():
 	print "You're standing at the edge of a large cornfield."
 
 def barnhouse():
-	print "You enter the barnhouse."
+	print "The moment you enter the barnhouse, something whooshes past your \
+face by inches. You jump back startled, and look up to see a beautiful barn \
+perch itself on a wooden beam near the ceiling."
 
 def cross_stream():
 	print "You cross the little wooden bridge curving over the gently trickling \
