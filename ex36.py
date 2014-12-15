@@ -1,41 +1,47 @@
 # Where are you, my ______?
 # A text adventure game
 
-def start():
+import time
+
+def intro():
 	print "There are some things you need to know."
 	print "You lost your kitten."
 	print "You need to find your kitten."
 	print "Go~~~!"
 	print " "
-	time.sleep(2)
-	print "You stand facing north towards the farmhouse. There's grassy fields \
+	time.sleep(3)
+	start()
+
+def start():
+	print "You stand facing north towards the farmhouse. There's a cornfield \
 to your left and a barnhouse to your right. Behind you is a stream with a small \
 wooden bridge across it, and across the stream in the distance is a white windmill."
 	print "Type 'help' for list of possible actions."
 	print " "
 	
-	# THIS IS WHERE I NEEDED HELP ----------------------------------------------------
+	action = ['N', 'S', 'E', 'W', 'help']
 
-	action = ['N', 'S', 'E', 'W', 'farmhouse', 'fields', 'left', 'barnhouse', 'right', 'cross', 'stream', 'help']
-
-	if "farmhouse" in action or "north" in action: # <------ (HOW DO I MAKE THIS CONCISE?)
+	do="something stupid" # assing a value to the variable to make testing it possible
+ 
+	while do not in action:
+		do = raw_input("> ")
+ 
+	if do == "N":
 		farmhouse()
-	elif "fields" in action or "left" in action or "west" in action:
+	elif do == "W":
 		cornfield()
-	elif "barnhouse" in action or "right" in action or "east" in action:
+	elif do == "E":
 		barnhouse()
-	elif "cross" in action or "stream" in action or "south" in action:
+	elif do == "S":
 		cross_stream()
-	elif action == "help":
+	elif do == "help":
 		help()
 	else:
 		print "Unfortunately, you don't know how to do said action."
 
-	# END SECTION WHERE I NEED HELP ---------------------------------------------------
-
 def help():
-	print "Type 'N', 'S', 'E', or 'W' to go in said direction. You can look at \
-(object), read (object), open (object), etc. for starters."
+	print "'N' = go north \n'S' = go south \n'E' = go east \n'W' = go west"
+	start()
 
 def farmhouse():
 	print "You open the door and step inside the house."
@@ -51,7 +57,8 @@ def cross_stream():
 stream. You're now standing in a vast grassy plain, and far in the middle of \
 the plain stands a white windmill slowly turning in the breeze."
 
-	action = raw_input("> ")
+	do = raw_input("> ")
 
 
+intro()
 start()
