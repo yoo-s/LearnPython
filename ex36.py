@@ -19,20 +19,20 @@ wooden bridge across it, and across the stream in the distance is a white windmi
 	print "Type 'help' for list of possible actions."
 	print " "
 	
-	action = ['N', 'S', 'E', 'W', 'help']
+	action = ['n', 's', 'e', 'w', 'help']
 
-	do="something stupid" # assing a value to the variable to make testing it possible
+	do="puppies" # assing a value to the variable to make testing it possible
  
 	while do not in action:
 		do = raw_input("> ")
  
-	if do == "N":
+	if do == "n":
 		farmhouse()
-	elif do == "W":
+	elif do == "w":
 		cornfield()
-	elif do == "E":
+	elif do == "e":
 		barnhouse()
-	elif do == "S":
+	elif do == "s":
 		cross_stream()
 	elif do == "help":
 		help()
@@ -40,23 +40,26 @@ wooden bridge across it, and across the stream in the distance is a white windmi
 		print "Unfortunately, you don't know how to do said action."
 
 def help():
-	print "'N' = go north \n'S' = go south \n'E' = go east \n'W' = go west"
+	print "'n' = go north \n's' = go south \n'e' = go east \n'w' = go west"
 	start()
 
 def farmhouse():
-	print "You open the door and step inside the house."
+	print "You open the door and step inside the house. It's quiet here except \
+for the soft ticking of the grandfather clock positioned at a corner."
 
 def cornfield():
-	print "You're standing at the edge of a large cornfield."
+	print "You're at the edge of a large cornfield. A lonely \
+scarecrow stands in the middle, crows pecking at its ragged clothes. \
+You feel scared you might find zombies lurking around inside."
 
 def barnhouse():
 	print "The moment you enter the barnhouse, something whooshes past your \
 face by inches. You jump back startled, and look up to see a beautiful barn \
-perch itself on a wooden beam near the ceiling."
+owl perch itself on a wooden beam near the ceiling."
 
 def cross_stream():
 	print "You cross the little wooden bridge curving over the gently trickling \
-stream. You're now standing in a vast grassy plain, and far in the middle of \
+stream. You're now looking at a vast grassy plain, and far in the middle of \
 the plain stands a white windmill slowly turning in the breeze."
 
 	do = raw_input("> ")
