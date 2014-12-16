@@ -58,7 +58,29 @@ def cornfield():
 scarecrow stands in the middle, crows pecking at its ragged clothes. \
 You feel scared you might find zombies lurking around inside."
 
-	do = raw_input("> ")
+	action = ['n', 's', 'e', 'w', 'help']
+
+	do="puppies" # assing a value to the variable to make testing it possible
+ 
+	while do not in action:
+		do = raw_input("> ")
+ 
+	if do == "n":
+		farmhouse()
+	elif do == "w":
+		cornfield()
+	elif do == "e":
+		barnhouse()
+	elif do == "s":
+		cross_stream()
+	elif do == "help":
+		print "'n' = go north, 's' = go south, 'e' = go east into barnhouse \n'w' = go west to cornfield"
+		time.sleep(2)
+		print " "
+	start()
+	else:
+		print "Unfortunately, you don't know how to do said action."
+
 
 def barnhouse():
 	print "The moment you enter the barnhouse, something whooshes past your \
